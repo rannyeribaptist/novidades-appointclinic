@@ -4,30 +4,30 @@
 @import "components/split";
 @import "components/text";
 @import "components/button";
-@import "components/columns";
-@import "components/navbar";
-@import "components/underline";
-@import "components/card";
-@import "components/service-card";
-@import "components/footer";
-@import "components/fancy-form";
-@import "components/portfolio-card";
-@import "components/project";
+// @import "components/columns";
+// @import "components/navbar";
+// @import "components/underline";
+// @import "components/card";
+// @import "components/service-card";
+// @import "components/footer";
+// @import "components/fancy-form";
+// @import "components/portfolio-card";
+// @import "components/project";
 
 body {
   margin: 0;
-  font-family: Montserrat, Arial;
+  font-family: 'Raleway', sans-serif;
   line-height: 1.5;
-  color: white;
 }
 
 a {
+  font-weight: bold;
   text-decoration: none;
-  color: white;
+  color: #3ababe;
 }
 
 .center { margin: 0 auto }
-.logo-small { height: 70px }
+.logo-small { width: 150px }
 .text-center { text-align: center }
 
 .image {
@@ -37,11 +37,30 @@ a {
   @include breakpoint("medium") { max-width: 100% }
 }
 
-.logo-footer {
-  width: 150px;
+img {
   height: auto;
+  width: 100%;
+  max-width: 405px;
 }
 
 .color {
   @include colors("color");
+}
+
+.left, .right {
+  text-align: center;
+}
+
+.spacer {
+  margin: 25px 0;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  text-align: left;
+
+  li {
+    margin: 15px 0;
+  }
 }

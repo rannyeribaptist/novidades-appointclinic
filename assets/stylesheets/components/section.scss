@@ -37,23 +37,13 @@
   }
 
   &--presentation {
-    background-image: url(../images/BNKR.png);
-    background-size: cover;
-    background-repeat: no-repeat;
     height: fit-content;
 
     .section__content { padding: 10% 5% 0 5% }
-
     .button { margin: 0 auto }
 
     @include breakpoint("medium") {
       .button { margin: unset }
-    }
-
-    h1 {
-      @include breakpoint("medium") {
-        text-align: left;
-      }
     }
   }
 

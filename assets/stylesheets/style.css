@@ -77,9 +77,6 @@
       .section--about .section__content {
         text-align: left; } }
 .section--presentation {
-  background-image: url(../images/BNKR.png);
-  background-size: cover;
-  background-repeat: no-repeat;
   height: fit-content; }
   .section--presentation .section__content {
     padding: 10% 5% 0 5%; }
@@ -88,9 +85,6 @@
   @media (min-width: 768px) {
     .section--presentation .button {
       margin: unset; } }
-  @media (min-width: 768px) {
-    .section--presentation h1 {
-      text-align: left; } }
 .section--bg1 {
   background-image: url(../images/background-1.png); }
 .section--bg2 {
@@ -198,7 +192,8 @@
   100% {
     opacity: 0%; } }
 .title {
-  font-size: 30px; }
+  font-size: 30px;
+  font-weight: lighter; }
   .title--white {
     color: white; }
   .title--black {
@@ -297,521 +292,21 @@
   .button--light-gray {
     background-color: #CECECE; }
 
-@font-face {
-  font-family: "nexabold";
-  src: url("../fonts/Nexa-Bold.otf") format("opentype"); }
-@font-face {
-  font-family: "gothamlight";
-  src: url("../fonts/Gotham-Light.otf") format("opentype"); }
-@font-face {
-  font-family: "gothamlightitalic";
-  src: url("../fonts/Gotham-Lightitalic.otf") format("opentype"); }
-@font-face {
-  font-family: "gothammedium";
-  src: url("../fonts/Gotham-Medium.otf") format("opentype"); }
-@font-face {
-  font-family: "gothamxlight";
-  src: url("../fonts/Gotham-XLight.otf") format("opentype"); }
-@font-face {
-  font-family: "gothamxlightitalic";
-  src: url("../fonts/Gotham-XLightita.otf") format("opentype"); }
-@keyframes bgcolor {
-  0% {
-    opacity: 0%; }
-  50% {
-    opacity: 100%; }
-  100% {
-    opacity: 0%; } }
-.columns {
-  text-align: center; }
-  @media (min-width: 768px) {
-    .columns--spaced {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between; } }
-  .columns--left {
-    text-align: left; }
-
-.column {
-  display: inline-block; }
-  @media (min-width: 425px) {
-    .column--sm-1 {
-      width: 99%; }
-    .column--sm-2 {
-      width: 49.7%; }
-    .column--sm-3 {
-      width: 33%; }
-    .column--sm-4 {
-      width: 24%; }
-    .column--sm-5 {
-      width: 19%; }
-    .column--sm-6 {
-      width: 15%; } }
-  @media (min-width: 768px) {
-    .column--md-1 {
-      width: 99%; }
-    .column--md-2 {
-      width: 49.7%; }
-    .column--md-3 {
-      width: 33%; }
-    .column--md-4 {
-      width: 24%; }
-    .column--md-5 {
-      width: 19%; }
-    .column--md-6 {
-      width: 15%; } }
-  @media (min-width: 1200px) {
-    .column--lg-1 {
-      width: 99%; }
-    .column--lg-2 {
-      width: 49.7%; }
-    .column--lg-3 {
-      width: 33%; }
-    .column--lg-4 {
-      width: 24%; }
-    .column--lg-5 {
-      width: 19%; }
-    .column--lg-6 {
-      width: 15%; } }
-  @media (min-width: 1800px) {
-    .column--xl-1 {
-      width: 99%; }
-    .column--xl-2 {
-      width: 49.7%; }
-    .column--xl-3 {
-      width: 33%; }
-    .column--xl-4 {
-      width: 24%; }
-    .column--xl-5 {
-      width: 19%; }
-    .column--xl-6 {
-      width: 15%; } }
-
-@font-face {
-  font-family: "nexabold";
-  src: url("../fonts/Nexa-Bold.otf") format("opentype"); }
-@font-face {
-  font-family: "gothamlight";
-  src: url("../fonts/Gotham-Light.otf") format("opentype"); }
-@font-face {
-  font-family: "gothamlightitalic";
-  src: url("../fonts/Gotham-Lightitalic.otf") format("opentype"); }
-@font-face {
-  font-family: "gothammedium";
-  src: url("../fonts/Gotham-Medium.otf") format("opentype"); }
-@font-face {
-  font-family: "gothamxlight";
-  src: url("../fonts/Gotham-XLight.otf") format("opentype"); }
-@font-face {
-  font-family: "gothamxlightitalic";
-  src: url("../fonts/Gotham-XLightita.otf") format("opentype"); }
-@keyframes bgcolor {
-  0% {
-    opacity: 0%; }
-  50% {
-    opacity: 100%; }
-  100% {
-    opacity: 0%; } }
-.navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: #262626;
-  z-index: 999;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-  .navbar a {
-    font-weight: 600;
-    color: white; }
-  .navbar--static {
-    position: unset; }
-  .navbar__padding {
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between; }
-  .navbar__mobile {
-    width: 100%; }
-    @media (min-width: 768px) {
-      .navbar__mobile {
-        display: none; } }
-  .navbar__content {
-    text-align: center;
-    display: none;
-    max-width: 1400px;
-    margin: 0 auto; }
-    .navbar__content img {
-      display: none; }
-    @media (min-width: 768px) {
-      .navbar__content {
-        width: 100%;
-        text-align: initial; }
-        .navbar__content img {
-          display: initial; } }
-    @media (min-width: 768px) {
-      .navbar__content {
-        display: block; } }
-  .navbar__links {
-    list-style: none;
-    margin: 0;
-    padding: 0; }
-    .navbar__links li {
-      margin: 15px 0; }
-    @media (min-width: 768px) {
-      .navbar__links {
-        float: right;
-        width: fit-content; }
-        .navbar__links li {
-          display: inline;
-          margin: 0 15px; } }
-
-.underline {
-  position: relative;
-  text-decoration: none;
-  display: inline-block; }
-
-.underline:after {
-  display: block;
-  content: '';
-  border-bottom: solid 1.5px #fff;
-  transform: scaleX(0);
-  transition: transform 250ms ease-in-out;
-  transform-origin: 100% 50%; }
-
-.underline:hover:after {
-  transform: scaleX(1);
-  transform-origin: 0 50%; }
-
-@font-face {
-  font-family: "nexabold";
-  src: url("../fonts/Nexa-Bold.otf") format("opentype"); }
-@font-face {
-  font-family: "gothamlight";
-  src: url("../fonts/Gotham-Light.otf") format("opentype"); }
-@font-face {
-  font-family: "gothamlightitalic";
-  src: url("../fonts/Gotham-Lightitalic.otf") format("opentype"); }
-@font-face {
-  font-family: "gothammedium";
-  src: url("../fonts/Gotham-Medium.otf") format("opentype"); }
-@font-face {
-  font-family: "gothamxlight";
-  src: url("../fonts/Gotham-XLight.otf") format("opentype"); }
-@font-face {
-  font-family: "gothamxlightitalic";
-  src: url("../fonts/Gotham-XLightita.otf") format("opentype"); }
-@keyframes bgcolor {
-  0% {
-    opacity: 0%; }
-  50% {
-    opacity: 100%; }
-  100% {
-    opacity: 0%; } }
-.card {
-  border-radius: 30px;
-  margin: 15px; }
-  .card--about {
-    background-image: url(../images/textura-icones.png);
-    background-size: contain; }
-    .card--about img {
-      max-width: 100%;
-      max-height: 250px; }
-  .card__content {
-    text-align: center;
-    padding: 30px 50px;
-    font-weight: bold; }
-    .card__content img {
-      max-width: 100%; }
-    @media (min-width: 425px) {
-      .card__content {
-        padding: 20px 40px; } }
-  .card--white {
-    background-color: white; }
-  .card--black {
-    background-color: black; }
-  .card--yellow {
-    background-color: #FFFF54; }
-  .card--gray {
-    background-color: #262626; }
-  .card--light-gray {
-    background-color: #CECECE; }
-
-@font-face {
-  font-family: "nexabold";
-  src: url("../fonts/Nexa-Bold.otf") format("opentype"); }
-@font-face {
-  font-family: "gothamlight";
-  src: url("../fonts/Gotham-Light.otf") format("opentype"); }
-@font-face {
-  font-family: "gothamlightitalic";
-  src: url("../fonts/Gotham-Lightitalic.otf") format("opentype"); }
-@font-face {
-  font-family: "gothammedium";
-  src: url("../fonts/Gotham-Medium.otf") format("opentype"); }
-@font-face {
-  font-family: "gothamxlight";
-  src: url("../fonts/Gotham-XLight.otf") format("opentype"); }
-@font-face {
-  font-family: "gothamxlightitalic";
-  src: url("../fonts/Gotham-XLightita.otf") format("opentype"); }
-@keyframes bgcolor {
-  0% {
-    opacity: 0%; }
-  50% {
-    opacity: 100%; }
-  100% {
-    opacity: 0%; } }
-.service-card {
-  background-color: #CECECE;
-  color: black;
-  text-align: center;
-  margin-bottom: 5px; }
-  .service-card__content {
-    padding: 25px; }
-  .service-card__icon {
-    width: 50%;
-    height: auto; }
-  .service-card__title {
-    font-weight: bold; }
-  .service-card__description {
-    font-weight: lighter; }
-
-@font-face {
-  font-family: "nexabold";
-  src: url("../fonts/Nexa-Bold.otf") format("opentype"); }
-@font-face {
-  font-family: "gothamlight";
-  src: url("../fonts/Gotham-Light.otf") format("opentype"); }
-@font-face {
-  font-family: "gothamlightitalic";
-  src: url("../fonts/Gotham-Lightitalic.otf") format("opentype"); }
-@font-face {
-  font-family: "gothammedium";
-  src: url("../fonts/Gotham-Medium.otf") format("opentype"); }
-@font-face {
-  font-family: "gothamxlight";
-  src: url("../fonts/Gotham-XLight.otf") format("opentype"); }
-@font-face {
-  font-family: "gothamxlightitalic";
-  src: url("../fonts/Gotham-XLightita.otf") format("opentype"); }
-@keyframes bgcolor {
-  0% {
-    opacity: 0%; }
-  50% {
-    opacity: 100%; }
-  100% {
-    opacity: 0%; } }
-.footer {
-  background-color: black;
-  padding: 5%; }
-  .footer img {
-    max-width: 80%;
-    margin: 10%; }
-    @media (min-width: 768px) {
-      .footer img {
-        margin: unset; } }
-  .footer__content {
-    text-align: center;
-    max-width: 1400px;
-    margin: 0 auto; }
-    @media (min-width: 768px) {
-      .footer__content {
-        display: flex;
-        flex-direction: row;
-        align-items: space-around; } }
-  .footer__icons {
-    display: flex;
-    justify-content: space-around; }
-    .footer__icons img {
-      max-width: 30px; }
-    @media (min-width: 768px) {
-      .footer__icons {
-        max-width: 250px;
-        margin-left: 10%;
-        width: unset; } }
-  .footer__links {
-    display: flex;
-    flex-direction: column;
-    text-align: center; }
-    .footer__links a {
-      font-weight: lighter; }
-    @media (min-width: 768px) {
-      .footer__links {
-        text-align: left;
-        margin-top: 50px; } }
-    @media (min-width: 1200px) {
-      .footer__links {
-        margin-top: 70px; } }
-  @media (min-width: 768px) {
-    .footer__element {
-      width: 33%; } }
-
-@font-face {
-  font-family: "nexabold";
-  src: url("../fonts/Nexa-Bold.otf") format("opentype"); }
-@font-face {
-  font-family: "gothamlight";
-  src: url("../fonts/Gotham-Light.otf") format("opentype"); }
-@font-face {
-  font-family: "gothamlightitalic";
-  src: url("../fonts/Gotham-Lightitalic.otf") format("opentype"); }
-@font-face {
-  font-family: "gothammedium";
-  src: url("../fonts/Gotham-Medium.otf") format("opentype"); }
-@font-face {
-  font-family: "gothamxlight";
-  src: url("../fonts/Gotham-XLight.otf") format("opentype"); }
-@font-face {
-  font-family: "gothamxlightitalic";
-  src: url("../fonts/Gotham-XLightita.otf") format("opentype"); }
-@keyframes bgcolor {
-  0% {
-    opacity: 0%; }
-  50% {
-    opacity: 100%; }
-  100% {
-    opacity: 0%; } }
-.fancy-form {
-  text-align: left; }
-  .fancy-form input, .fancy-form textarea {
-    display: block;
-    width: 90%;
-    height: 27px;
-    margin: 10px 0 15px 0;
-    padding: 5px 10px;
-    font-size: 1rem;
-    background-color: #ffffffa6;
-    border-radius: 5px;
-    border: none; }
-  .fancy-form textarea {
-    height: unset; }
-
-@font-face {
-  font-family: "nexabold";
-  src: url("../fonts/Nexa-Bold.otf") format("opentype"); }
-@font-face {
-  font-family: "gothamlight";
-  src: url("../fonts/Gotham-Light.otf") format("opentype"); }
-@font-face {
-  font-family: "gothamlightitalic";
-  src: url("../fonts/Gotham-Lightitalic.otf") format("opentype"); }
-@font-face {
-  font-family: "gothammedium";
-  src: url("../fonts/Gotham-Medium.otf") format("opentype"); }
-@font-face {
-  font-family: "gothamxlight";
-  src: url("../fonts/Gotham-XLight.otf") format("opentype"); }
-@font-face {
-  font-family: "gothamxlightitalic";
-  src: url("../fonts/Gotham-XLightita.otf") format("opentype"); }
-@keyframes bgcolor {
-  0% {
-    opacity: 0%; }
-  50% {
-    opacity: 100%; }
-  100% {
-    opacity: 0%; } }
-.portfolio-card {
-  position: relative; }
-  .portfolio-card__background {
-    width: 100%;
-    height: 100%; }
-  .portfolio-card__content {
-    position: absolute;
-    top: 0;
-    height: 98.9%;
-    width: 100%;
-    opacity: 0;
-    transition: opacity 0.5s cubic-bezier(0, 0, 0.28, 1.03);
-    background-color: #000000ad;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column; }
-    .portfolio-card__content:hover {
-      opacity: 1; }
-
-@font-face {
-  font-family: "nexabold";
-  src: url("../fonts/Nexa-Bold.otf") format("opentype"); }
-@font-face {
-  font-family: "gothamlight";
-  src: url("../fonts/Gotham-Light.otf") format("opentype"); }
-@font-face {
-  font-family: "gothamlightitalic";
-  src: url("../fonts/Gotham-Lightitalic.otf") format("opentype"); }
-@font-face {
-  font-family: "gothammedium";
-  src: url("../fonts/Gotham-Medium.otf") format("opentype"); }
-@font-face {
-  font-family: "gothamxlight";
-  src: url("../fonts/Gotham-XLight.otf") format("opentype"); }
-@font-face {
-  font-family: "gothamxlightitalic";
-  src: url("../fonts/Gotham-XLightita.otf") format("opentype"); }
-@keyframes bgcolor {
-  0% {
-    opacity: 0%; }
-  50% {
-    opacity: 100%; }
-  100% {
-    opacity: 0%; } }
-.project {
-  margin-top: 116px;
-  background-color: #262626; }
-  .project__presentation {
-    padding: 5% 10% 0 10%;
-    text-align: center;
-    max-width: 1400px;
-    margin: 0 auto; }
-  .project__title {
-    color: #FFFF54;
-    margin-bottom: 0;
-    font-weight: bold; }
-    @media (min-width: 768px) {
-      .project__title {
-        font-size: 3rem; } }
-  .project__subtitle {
-    color: white;
-    margin-top: 0;
-    font-weight: lighter; }
-    @media (min-width: 768px) {
-      .project__subtitle {
-        font-size: 2rem; } }
-  .project__description {
-    background-image: url(../images/background-2.png);
-    background-repeat: repeat-y;
-    background-size: cover;
-    padding: 15% 10%;
-    text-align: center;
-    font-weight: bold;
-    font-size: 1.5rem;
-    color: black; }
-    @media (min-width: 768px) {
-      .project__description {
-        font-size: 2rem; } }
-  .project__image {
-    max-width: 100%;
-    margin-top: 100px;
-    width: auto;
-    height: auto; }
-
 body {
   margin: 0;
-  font-family: Montserrat, Arial;
-  line-height: 1.5;
-  color: white; }
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.5; }
 
 a {
+  font-weight: bold;
   text-decoration: none;
-  color: white; }
+  color: #3ababe; }
 
 .center {
   margin: 0 auto; }
 
 .logo-small {
-  height: 70px; }
+  width: 150px; }
 
 .text-center {
   text-align: center; }
@@ -825,9 +320,10 @@ a {
     .image {
       max-width: 100%; } }
 
-.logo-footer {
-  width: 150px;
-  height: auto; }
+img {
+  height: auto;
+  width: 100%;
+  max-width: 405px; }
 
 .color--white {
   color: white; }
@@ -839,5 +335,18 @@ a {
   color: #262626; }
 .color--light-gray {
   color: #CECECE; }
+
+.left, .right {
+  text-align: center; }
+
+.spacer {
+  margin: 25px 0; }
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  text-align: left; }
+  ul li {
+    margin: 15px 0; }
 
 /*# sourceMappingURL=style.css.map */

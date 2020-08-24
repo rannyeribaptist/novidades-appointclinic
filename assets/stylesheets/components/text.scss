@@ -2,6 +2,7 @@
 
 .title {
   font-size: 30px;
+  font-weight: lighter;
 
   @include colors("color");
   @include breakpoint("medium") { font-size: 40px }

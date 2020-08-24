@@ -10,6 +10,12 @@
     <!-- Responsive meta tag -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,500;0,700;1,500&display=swap" rel="stylesheet">
+
+    <!-- Css Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="assets/images/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="assets/images/apple-icon-60x60.png">
@@ -32,8 +38,8 @@
     <!-- Sharing meta tags -->
     <meta property="og:title" content="AppointClinic">
     <meta property="og:description" content="Novidades e atualizações do AppointClinic.">
-    <meta property="og:image" content="https://novidades.appointclinic.com.br/assets/images/icon.png">
-    <meta property="og:url" content="https://novidades.appointclinic.com.br">
+    <meta property="og:image" content="https://novidades.appointclinic.com/assets/images/icon.png">
+    <meta property="og:url" content="https://novidades.appointclinic.com">
     <meta property="twitter:card" content="summary_large_image">
 
     <meta property="og:site_name" content="AppointClinic">
@@ -43,79 +49,117 @@
   <body>
 
     <!-- First section -->
-    <div class="section section--start section--fixed-size section--presentation">
+    <div class="section section--presentation text-center animate__animated animate__fadeIn animate__slow">
       <div class="section__content">
+        <img class="logo-small" src="assets/images/logo.png" alt="appointclinic-logo">
 
+        <h1 class="title">O AppointClinic preparou várias novidades para você!</h1>
+
+        <br>
+
+        <h3>Nós planejamos uma série de funcionalidades que vão te ajudar no seu dia a dia, tornando sua vida ainda mais prática, mas de forma mais robusta.</h3>
+
+        <p>Para entrar em contato conosco, basta <a href="https://api.whatsapp.com/send?phone=5581998590619&text=Ol%C3%A1%2C%20gostaria%20de%20tirar%20d%C3%BAvidas%20sobre%20o%20AppointClinic!" target="_blank">clicar aqui</a> que a gente te atende o mais rápido possível.</p>
+
+      </div>
+    </div>
+
+    <!-- Telemedicina -->
+    <div class="section">
+      <div class="section__content">
         <div class="split">
-          <div class="split__content">
-            <h1 class="title title--yellow">Uma agência diferente de tudo que você<br> já viu</h1>
-
-            <br>
-            <br>
-
-            <a href="#about">
-              <button type="button" class="button button--yellow color--black">Saber mais</button>
-            </a>
+          <div class="split__content left animate__animated animate__fadeInLeft animate__slow">
+            <h1>Telemedicina</h1>
+            <p>Agora você poderá realizar chamadas de vídeo com os seus pacientes, tudo por dentro da plataforma. Você poderá utilizar o sistema livrimente enquanto utiliza essa funcionalidade, para que todo o procedimento do atendimento seja perfeitamente executado.</p>
+          </div>
+          <div class="split__content right animate__animated animate__fadeInRight animate__slow animate__delay-1s">
+            <img src="assets/images/doctors-day.jpg" alt="">
           </div>
         </div>
-
-
       </div>
     </div>
 
-    <!-- Second section -->
-    <div class="section text-center section--bg1" id="about">
+    <!-- Privacidade -->
+    <div class="section">
       <div class="section__content">
-
-        <h1 class="title">O BUNKER CUIDA DO SEU NEGÓCIO POR COMPLETO</h1>
-
-        <div class="columns columns--spaced">
-          <div class="column">
-            <div class="card card--about">
-              <div class="card__content">
-                <img src="assets/images/icone-1.png" alt="icon">
-                <p>Lorem ipsum dollor sit amet</p>
-              </div>
-            </div>
+        <div class="split split--inverted">
+          <div class="split__content left">
+            <img src="assets/images/privacy.jpg" alt="">
           </div>
-          <div class="column">
-            <div class="card card--about">
-              <div class="card__content">
-                <img src="assets/images/icone-2.png" alt="icon">
-                <p>Lorem ipsum dollor sit amet</p>
-              </div>
-            </div>
-          </div>
-          <div class="column">
-            <div class="card card--about">
-              <div class="card__content">
-                <img src="assets/images/icone-3.png" alt="icon">
-                <p>Lorem ipsum dollor sit amet</p>
-              </div>
-            </div>
+          <div class="split__content right">
+            <h1>Privacidade</h1>
+            <p>Ninguém mais vai poder visualizar informações dos seus pacientes. Para garantir que tudo esteja sob seu controle, será possível configurar se as recepcionistas poderào visualizar informações dos prontuários. Somente o médico responsável pelo paciente poderá visualizar os dados do mesmo.</p>
           </div>
         </div>
+      </div>
+    </div>
+
+    <!-- Telemedicina -->
+    <div class="section">
+      <div class="section__content">
+        <div class="split">
+          <div class="split__content left">
+            <h1>Prontuários mais elaborados</h1>
+            <p>Os prontuários podem ser preenchidos de maneira mais complexa graças à adição de um plugin de edição de texto, semelhante aos softwares de edição de documentos, como o Microsoft Word por exemplo.</p>
+          </div>
+          <div class="split__content right">
+            <img src="assets/images/docs.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Termos -->
+    <div class="section">
+      <div class="section__content">
+        <div class="split split--inverted">
+          <div class="split__content left">
+            <img src="assets/images/terms.png" alt="">
+          </div>
+          <div class="split__content right">
+            <h1>Novo termo de uso</h1>
+            <p>Para nos adequarmos melhor à todas as mudanças que vêm junto com a LGPD (Lei geral de proteção de dados), criamos um novo termo de utilização da nossa plataforma contendo todas as informações atualizadas sobre segurança e utilização no geral.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Detalhes -->
+    <div class="section">
+      <div class="section__content">
+        <div class="split">
+          <div class="split__content left">
+            <h1>Muitos novos detalhes</h1>
+            <p>Muitas outras melhorias foram feitas na plataforma, tais como:</p>
+            <ul>
+              <li>- Removido o campo de seleção de data nos agendamentos;</li>
+              <li>- Funcionalidade para repetir o valor de um prontuário anterior do paciente;</li>
+              <li>- Novos filtros adicionados para os atendimentos;</li>
+              <li>- Dados do prontuário poderão ser adicionadas sob demanda;</li>
+            </ul>
+          </div>
+          <div class="split__content right">
+            <img src="assets/images/more.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section__content">
+        <h1 class="title">O que mais vem por aí?</h1>
+        <p>Mais funcionalidades já estão sendo testadas e desenvolvidas! Módulo financeiro, controle de estoque, chamada na tv da recepção, SMS, chat interno, agendamento online... Logo tudo isso estará disponível para você.</p>
+        <br>
+        <br>
+        <h1 class="title">Mudança nos valores dos planos</h1>
+        <p>A partir do dia 10 de Setembro de 2020, todos os planos deixarão de ser por clínica e passarão a ser planos individuais por profissional. Na prática, isso significa que a assinatura agora é individual por profissional da área da saúde. Isso não inclui os usuários recepcionistas.</p>
+        <p>Na pratica nada muda, todas as funcionalidades permanecerão as mesmas que sempre existiram, com algumas novidades a mais para deixar a experiência mais completa. Caso o usuário decida assinar algum módulo novo separadamente ou fazer um upgrade no plano, basta entrar em contato com o nosso suporte para que possamos realizar a ativação das novas funcionalidades.</p>
 
         <br>
         <br>
 
-        <a href="/servicos.html">
-          <button type="button" class="button button--yellow center">+ SERVIÇOS</button>
-        </a>
-
-      </div>
-    </div>
-
-    <!-- Third section -->
-    <div class="section section--about" id="about">
-      <div class="section__content">
-        <h1 class="title">Sobre o Bunker</h1>
-
-        <p class="subtitle">
-          O Bunker é uma agência de mídia criativa com foco em produção digital.
-          Nossos alicerces estão firmados em fortificações como um bunker, um lugar seguro e que oferece todos os recursos necessários para a sobrevivência.
-          Essa é a nossa agência oferecemos todos os recursos necessáriospara a sua empresa está forte no mercado
-        </p>
+        <p>Para entrar em contato conosco, basta <a href="https://api.whatsapp.com/send?phone=5581998590619&text=Ol%C3%A1%2C%20gostaria%20de%20tirar%20d%C3%BAvidas%20sobre%20o%20AppointClinic!" target="_blank">clicar aqui</a> que a gente te atende o mais rápido possível.</p>
+        <p>Para visualizar os novos termos de uso da plataforma, <a href="assets/documents/termo-de-uso-appointclinic.pdf" target="_blank">clique aqui</a>.</p>
       </div>
     </div>
 
