@@ -1,0 +1,28 @@
+@import "variables";
+
+.card {
+  border-radius: 30px;
+  margin: 15px;
+
+  &--about {
+    background-image: url(../images/textura-icones.png);
+    background-size: contain;
+
+    img {
+      max-width: 100%;
+      max-height: 250px;
+    }
+  }
+
+  &__content {
+    text-align: center;
+    padding: 30px 50px;
+    font-weight: bold;
+
+    img { max-width: 100%; }
+
+    @include breakpoint("small-up") { padding: 20px 40px }
+  }
+
+  @include colors("background-color");
+}

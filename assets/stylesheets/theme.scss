@@ -1,0 +1,47 @@
+// Color Variables, Breakpoints and utils
+@import "components/variables";
+@import "components/section";
+@import "components/split";
+@import "components/text";
+@import "components/button";
+@import "components/columns";
+@import "components/navbar";
+@import "components/underline";
+@import "components/card";
+@import "components/service-card";
+@import "components/footer";
+@import "components/fancy-form";
+@import "components/portfolio-card";
+@import "components/project";
+
+body {
+  margin: 0;
+  font-family: Montserrat, Arial;
+  line-height: 1.5;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.center { margin: 0 auto }
+.logo-small { height: 70px }
+.text-center { text-align: center }
+
+.image {
+  max-width: 100%;
+
+  @include breakpoint("small-up") { max-width: 70% }
+  @include breakpoint("medium") { max-width: 100% }
+}
+
+.logo-footer {
+  width: 150px;
+  height: auto;
+}
+
+.color {
+  @include colors("color");
+}

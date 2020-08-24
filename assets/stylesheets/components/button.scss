@@ -1,0 +1,15 @@
+@import "variables";
+
+.button {
+  border: 0;
+  padding: 10px 20px;
+  color: $gray;
+  font-size: 20px;
+  transition: padding 0.2s;
+  cursor: pointer;
+  width: fit-content;
+
+  &--rounded { border-radius: 10px }
+
+  @include colors("background-color");
+}

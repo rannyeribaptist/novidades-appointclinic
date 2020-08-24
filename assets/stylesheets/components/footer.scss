@@ -1,0 +1,64 @@
+@import "variables";
+
+.footer {
+  background-color: black;
+  padding: 5%;
+
+  img {
+    max-width: 80%;
+    margin: 10%;
+
+    @include breakpoint("medium") {
+      margin: unset;
+    }
+  }
+
+  &__content {
+    text-align: center;
+
+    @include breakpoint("medium") {
+      display: flex;
+      flex-direction: row;
+      align-items: space-around;
+    }
+
+    @include breakpoint("limiter");
+  }
+
+  &__icons {
+    display: flex;
+    justify-content: space-around;
+
+
+    img { max-width: 30px }
+
+    @include breakpoint("medium") {
+      max-width: 250px;
+      margin-left: 10%;
+      width: unset;
+    }
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    a { font-weight: lighter }
+
+    @include breakpoint("medium") {
+      text-align: left;
+      margin-top: 50px;
+    }
+
+    @include breakpoint("large") {
+      margin-top: 70px;
+    }
+  }
+
+  &__element {
+    @include breakpoint("medium") {
+      width: 33%;
+    }
+  }
+}

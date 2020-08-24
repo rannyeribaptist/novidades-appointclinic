@@ -1,0 +1,56 @@
+@import "variables";
+
+.project {
+  margin-top: 116px;
+  background-color: $gray;
+
+  &__presentation {
+    padding: 5% 10% 0 10%;
+    text-align: center;
+
+    @include breakpoint("limiter");
+  }
+
+  &__title {
+    color: $yellow;
+    margin-bottom: 0;
+    font-weight: bold;
+
+    @include breakpoint("medium") {
+      font-size: 3rem;
+    }
+  }
+
+  &__subtitle {
+    color: white;
+    margin-top: 0;
+    font-weight: lighter;
+
+    @include breakpoint("medium") {
+      font-size: 2rem;
+    }
+  }
+
+  &__description {
+    background-image: url(../images/background-2.png);
+    background-repeat: repeat-y;
+    background-size: cover;
+    padding: 15% 10%;
+
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: black;
+
+    @include breakpoint("medium") {
+      font-size: 2rem;
+    }
+  }
+
+  &__image {
+    max-width: 100%;
+    margin-top: 100px;
+    width: auto;
+    height: auto;
+  }
+}

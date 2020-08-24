@@ -1,0 +1,28 @@
+@import "variables";
+
+.title {
+  font-size: 30px;
+
+  @include colors("color");
+  @include breakpoint("medium") { font-size: 40px }
+}
+
+.subtitle {
+  @include breakpoint("medium") { max-width: 60% }
+  @include breakpoint("large") { font-size: 20px }
+}
+
+.text-background {
+  width: fit-content;
+  margin: 0 auto;
+
+  @include colors("background-color");
+}
+
+.text {
+  &--bold { font-weight: bold }
+  &--small { font-size: 20px }
+  &--center { text-align: center }
+
+  @include colors("color");
+}
